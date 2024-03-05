@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree,HardwareProject,eprs ,delivery } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, HardwareProject, eprs, delivery } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -18,18 +18,23 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
           title="Cornflakes Maker"
-          des="A System that make Cornflakes for Office Employees based on RFID tag"
+          des="The system automates cornflakes mixing for office employees using RFID-tagged ID cards, ensuring quick, hygienic, and free meals, thus addressing time constraints and dissatisfaction with manual food serving."
           src={HardwareProject}
+          githubLink="https://github.com/matheshyogeswaran/Hardware-project-L1.git"
+        // websiteLink="https://cornflakesmaker.com"
         />
         <ProjectsCard
           title="EPRS"
           des="2nd Year project Role-Group Leader Develop an appropriate & effective employee performance review system (EPRS) to review the performance of an employee using the data of an employee related to GIT, JIRA, leave system Technology"
           src={eprs}
+          githubLink="https://github.com/orgs/infinitix36/repositories"
+          websiteLink="https://eprs-frontend.onrender.com/"
         />
         <ProjectsCard
           title="Delivery App "
           des="Supermarket System revolutionizes retail operations through seamless integration of inventory, sales, and customer management. Employing Microservices Architecture, it ensures scalability and efficiency, enhanced by features like RabbitMQ and Keycloak for messaging and authentication."
           src={delivery}
+          githubLink="https://github.com/matheshyogeswaran/NetroShop"
         />
         <ProjectsCard
           title="SOCIAL MEDIA CLONE"
