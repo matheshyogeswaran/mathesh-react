@@ -36,7 +36,7 @@ const Projects = () => {
           src={delivery}
           githubLink="https://github.com/matheshyogeswaran/NetroShop"
         />
-        <ProjectsCard
+        {/* <ProjectsCard
           title="SOCIAL MEDIA CLONE"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
@@ -53,7 +53,7 @@ const Projects = () => {
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={projectTwo}
-        />
+        /> */}
       </div>
     </section>
   );
