@@ -10,7 +10,7 @@ import contactImg from "./images/contact/contactImg.png";
 import HardwareProject from "./images/projects/HardwareProject.png"
 import eprs from "./images/projects/eprs.png";
 import delivery from "./images/projects/delivery.jpg";
-
+import favicon from "./images/favicon.ico";
 export {
   logo,
   bannerImg,
@@ -23,6 +23,8 @@ export {
   contactImg,
   HardwareProject,
   eprs,
-  delivery
+  delivery,
+  favicon
+
 
 };
