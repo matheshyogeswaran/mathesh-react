@@ -73,12 +73,12 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
+                  <a href="https://www.facebook.com/matheshes/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
                     <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
+                  </a>
+                  <a href="https://twitter.com/mathesh_yoges" target="_blank" rel="noopener noreferrer" className="bannerIcon">
                     <FaTwitter />
-                  </span>
+                  </a>
                   <a href="https://www.linkedin.com/in/mathesh-yogeswaran/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
                     <FaLinkedinIn />
                   </a>

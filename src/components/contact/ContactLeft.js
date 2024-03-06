@@ -16,7 +16,7 @@ const ContactLeft = () => {
           MERN Stack Developer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-        Mathesh is undergraduate of university of moratuwa. Who is enthusiastic person to learn IT related things.
+          Mathesh is undergraduate of university of moratuwa. Who is enthusiastic person to learn IT related things.
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
           Phone: <span className="text-lightText">+94776471821</span>
@@ -28,16 +28,15 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
-          <span className="bannerIcon">
+          <a href="https://www.facebook.com/matheshes/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
             <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
+          </a>
+          <a href="https://twitter.com/mathesh_yoges" target="_blank" rel="noopener noreferrer" className="bannerIcon">
             <FaTwitter />
-          </span>
+          </a>
           <a href="https://www.linkedin.com/in/mathesh-yogeswaran/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
-
-              <FaLinkedinIn />
-              </a>
+            <FaLinkedinIn />
+          </a>
         </div>
       </div>
     </div>
