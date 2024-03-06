@@ -7,6 +7,7 @@ import FooterBottom from "./components/footer/FooterBottom";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
+import Blogs from "./components/blogs/Blogs";
 // import Testimonial from "./components/tesimonial/Testimonial";
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -19,6 +20,7 @@ function App() {
         <Features />
         <Projects />
         <Resume />
+        <Blogs/>
         {/* <Testimonial /> */}
         <Contact />
         {/* <Footer /> */}
