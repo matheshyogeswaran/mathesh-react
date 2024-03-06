@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Title from '../layouts/Title';
 import ContactLeft from './ContactLeft';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -21,30 +22,61 @@ const Contact = () => {
 
   const handleSend = (e) => {
     e.preventDefault();
+    
     if (username === "") {
       setErrMsg("Username is required!");
+      return;
     } else if (phoneNumber === "") {
       setErrMsg("Phone number is required!");
+      return;
     } else if (email === "") {
       setErrMsg("Please give your Email!");
+      return;
     } else if (!emailValidation(email)) {
       setErrMsg("Give a valid Email!");
+      return;
     } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
+      setErrMsg("Please give your Subject!");
+      return;
     } else if (message === "") {
       setErrMsg("Message is required!");
-    } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      return;
     }
+    
+    // Include email address and phone number in the message
+    const fullMessage = `Email: ${email}\nPhone Number: ${phoneNumber}\n\n${message}`;
+  
+    // Send email using EmailJS
+    emailjs
+      .send(
+        'service_m1ht7ri',
+        'template_tn07zxq',
+        {
+          to_name: 'Mathesh',
+          from_name: username,
+          message: fullMessage
+        },
+        'wCVKp5MQLA2rbZCxv'
+      )
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        setSuccessMsg(
+          `Thank you dear ${username}, Your message has been sent successfully!`
+        );
+        setErrMsg("");
+        setUsername("");
+        setPhoneNumber("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+        setErrMsg("An error occurred while sending the email. Please try again later.");
+      });
   };
+  
+  
   return (
     <section
       id="contact"
