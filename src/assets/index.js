@@ -11,6 +11,7 @@ import HardwareProject from "./images/projects/HardwareProject.png"
 import eprs from "./images/projects/eprs.png";
 import delivery from "./images/projects/delivery.jpg";
 import favicon from "./images/favicon.ico";
+import reactVS from "./images/projects/reactVS.png"
 export {
   logo,
   bannerImg,
@@ -24,7 +25,8 @@ export {
   HardwareProject,
   eprs,
   delivery,
-  favicon
+  favicon,
+  reactVS
 
 
 };
