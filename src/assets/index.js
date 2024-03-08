@@ -12,6 +12,8 @@ import eprs from "./images/projects/eprs.png";
 import delivery from "./images/projects/delivery.jpg";
 import favicon from "./images/favicon.ico";
 import reactVS from "./images/projects/reactVS.png"
+import OSM from "./images/projects/OSM.png"
+import githubChart from "./images/projects/githubChart.png"
 export {
   logo,
   bannerImg,
@@ -26,7 +28,9 @@ export {
   eprs,
   delivery,
   favicon,
-  reactVS
+  reactVS,
+  OSM,
+  githubChart
 
 
 };

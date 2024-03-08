@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { HardwareProject, eprs, delivery,reactVS } from "../../assets/index";
+import { HardwareProject, eprs, delivery,reactVS,OSM,githubChart } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -41,6 +41,20 @@ const Projects = () => {
           des="ReactDocComBuilder is a powerful tool for React developers who want to streamline their documentation process. With ReactDocComBuilder, you can effortlessly generate comprehensive documentation for your React components and projects right within Visual Studio Code."
           src={reactVS}
           githubLink="https://github.com/matheshyogeswaran/ReactDocComBuilder"
+        />
+         <ProjectsCard
+          title="Github Details Get Web App"
+          des="This application generates commit details and a chart comparing commits and contributors when provided with a username and repository name"
+          src={githubChart}
+          websiteLink="https://mathesh-github-details.netlify.app/"
+          githubLink="https://github.com/matheshyogeswaran/git_chart_commits"
+        />
+         <ProjectsCard
+          title="Open Street Map(OSM) With ReactJS Web App"
+          des="This application is designed to retrieve your current location and display the results based on the place you want to search for."
+          src={OSM}
+          websiteLink="https://mathesh-osm-react-map.netlify.app/"
+          githubLink="https://github.com/matheshyogeswaran/openmap_react"
         />
         {/* <ProjectsCard
           title="SOCIAL MEDIA CLONE"
