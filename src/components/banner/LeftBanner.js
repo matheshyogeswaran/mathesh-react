@@ -1,17 +1,18 @@
 import React from 'react'
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaLinkedinIn, FaReact,FaGithub,FaMedium } from "react-icons/fa";
-import {  SiFigma,SiNodedotjs } from "react-icons/si";
+import { FaLinkedinIn, FaReact, FaGithub, FaMedium } from "react-icons/fa";
+import { FaStackOverflow } from "react-icons/fa";
+import { SiFigma, SiNodedotjs } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
 const LeftBanner = () => {
-    const [text] = useTypewriter({
-      words: ["Professional Coder.", "Full Stack Developer.", "UI Designer.","Mobile Developer."],
-      loop: true,
-      typeSpeed: 20,
-      deleteSpeed: 10,
-      delaySpeed: 2000,
-    });
+  const [text] = useTypewriter({
+    words: ["Professional Coder.", "Full Stack Developer.", "UI Designer.", "Mobile Developer."],
+    loop: true,
+    typeSpeed: 20,
+    deleteSpeed: 10,
+    delaySpeed: 2000,
+  });
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
@@ -28,7 +29,7 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-        Mathesh is undergraduate of university of moratuwa. Who is enthusiastic person to learn IT related things.
+          Mathesh is undergraduate of university of moratuwa. Who is enthusiastic person to learn IT related things.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -37,17 +38,21 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-          <a href="https://github.com/matheshyogeswaran" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+            <a href="https://github.com/matheshyogeswaran" target="_blank" rel="noopener noreferrer" className="bannerIcon">
               <FaGithub />
             </a>
             <a href="https://medium.com/@matheshyogeswaran" target="_blank" rel="noopener noreferrer" className="bannerIcon">
 
               <FaMedium />
-              </a>
-              <a href="https://www.linkedin.com/in/mathesh-yogeswaran/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+            </a>
+            <a href="https://www.linkedin.com/in/mathesh-yogeswaran/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
 
               <FaLinkedinIn />
-              </a>
+            </a>
+            <a href="https://stackoverflow.com/users/16326615/mathesh-yogeswaran" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+
+            <FaStackOverflow />
+            </a>
           </div>
         </div>
         <div>
@@ -59,7 +64,7 @@ const LeftBanner = () => {
               <FaReact />
             </span>
             <span className="bannerIcon">
-            <TbBrandReactNative />
+              <TbBrandReactNative />
             </span>
             <span className="bannerIcon">
               <SiNodedotjs />
