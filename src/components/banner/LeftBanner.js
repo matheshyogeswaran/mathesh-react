@@ -49,10 +49,10 @@ const LeftBanner = () => {
 
               <FaLinkedinIn />
             </a>
-            <a href="https://stackoverflow.com/users/16326615/mathesh-yogeswaran" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+            {/* <a href="https://stackoverflow.com/users/16326615/mathesh-yogeswaran" target="_blank" rel="noopener noreferrer" className="bannerIcon">
 
             <FaStackOverflow />
-            </a>
+            </a> */}
           </div>
         </div>
         <div>
@@ -69,9 +69,9 @@ const LeftBanner = () => {
             <span className="bannerIcon">
               <SiNodedotjs />
             </span>
-            <span className="bannerIcon">
+            {/* <span className="bannerIcon">
               <SiFigma />
-            </span>
+            </span> */}
           </div>
         </div>
       </div>
