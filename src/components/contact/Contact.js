@@ -49,14 +49,14 @@ const Contact = () => {
     // Send email using EmailJS
     emailjs
       .send(
-        'service_m1ht7ri',
-        'template_tn07zxq',
+        `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`,
+        `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`,
         {
           to_name: 'Mathesh',
           from_name: username,
           message: fullMessage
         },
-        'wCVKp5MQLA2rbZCxv'
+        `${process.env.REACT_APP_EMAILJS_USER_ID}`
       )
       .then((response) => {
         console.log('Email sent successfully:', response);
