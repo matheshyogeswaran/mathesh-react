@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
+
 import Title from '../layouts/Title'
-import { HardwareProject, eprs, delivery,reactVS,OSM,githubChart } from "../../assets/index";
+import { HardwareProject, eprs, delivery, reactVS, OSM, githubChart } from "../../assets/index";
+import ProjectModal from './ProjectModal'; // Assuming you have a ProjectModal component
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedProject(null);
+  };
   return (
     <section
       id="projects"
@@ -21,7 +35,14 @@ const Projects = () => {
           des="The system automates cornflakes mixing for office employees using RFID-tagged ID cards, ensuring quick, hygienic, and free meals, thus addressing time constraints and dissatisfaction with manual food serving."
           src={HardwareProject}
           githubLink="https://github.com/matheshyogeswaran/Hardware-project-L1.git"
-        // websiteLink="https://cornflakesmaker.com"
+          // websiteLink="https://cornflakesmaker.com"
+          onClick={() => handleProjectClick({
+            title: "Cornflakes Maker",
+            description: "The system automates cornflakes mixing for office employees using RFID-tagged ID cards, ensuring quick, hygienic, and free meals, thus addressing time constraints and dissatisfaction with manual food serving.",
+            githubLink: "https://github.com/matheshyogeswaran/Hardware-project-L1.git",
+            technologies: ["RFID", "Automation"],
+            image: HardwareProject // Assuming HardwareProject is the image URL
+          })}
         />
         <ProjectsCard
           title="EPRS"
@@ -29,12 +50,26 @@ const Projects = () => {
           src={eprs}
           githubLink="https://github.com/orgs/infinitix36/repositories"
           websiteLink="https://eprs-frontend.onrender.com/"
+          onClick={() => handleProjectClick({
+            title: "EPRS",
+            description: "2nd Year project Role-Group Leader Develop an appropriate & effective employee performance review system (EPRS) to review the performance of an employee using the data of an employee related to GIT, JIRA, leave system Technology",
+            githubLink: "https://github.com/orgs/infinitix36/repositories",
+            technologies: ["MERN"],
+            image: eprs // Assuming HardwareProject is the image URL
+          })}
         />
         <ProjectsCard
           title="Delivery App "
           des="Supermarket System revolutionizes retail operations through seamless integration of inventory, sales, and customer management. Employing Microservices Architecture, it ensures scalability and efficiency, enhanced by features like RabbitMQ and Keycloak for messaging and authentication."
           src={delivery}
           githubLink="https://github.com/matheshyogeswaran/NetroShop"
+          onClick={() => handleProjectClick({
+            title: "Delivery App",
+            description: "Supermarket System revolutionizes retail operations through seamless integration of inventory, sales, and customer management. Employing Microservices Architecture, it ensures scalability and efficiency, enhanced by features like RabbitMQ and Keycloak for messaging and authentication.",
+            githubLink: "https://github.com/matheshyogeswaran/NetroShop",
+            technologies: ["SpringBoot", "Kafka", "API Gateway"],
+            image: delivery // Assuming HardwareProject is the image URL
+          })}
         />
         <ProjectsCard
           title="ReactDocComBuilder"
@@ -42,20 +77,44 @@ const Projects = () => {
           src={reactVS}
           websiteLink="https://marketplace.visualstudio.com/items?itemName=Mathesh.ReactDocComBuilder"
           githubLink="https://github.com/matheshyogeswaran/ReactDocComBuilder"
+          onClick={() => handleProjectClick({
+            title: "ReactDocComBuilder",
+            description: "ReactDocComBuilder is a powerful tool for React developers who want to streamline their documentation process. With ReactDocComBuilder, you can effortlessly generate comprehensive documentation for your React components and projects right within Visual Studio Code.",
+            websiteLink: "https://marketplace.visualstudio.com/items?itemName=Mathesh.ReactDocComBuilder",
+            githubLink: "https://github.com/matheshyogeswaran/ReactDocComBuilder",
+            technologies: ["React", "Visual Studio Code"],
+            image: reactVS
+          })}
         />
-         <ProjectsCard
+        <ProjectsCard
           title="Github Details Get Web App"
           des="This application generates commit details and a chart comparing commits and contributors when provided with a username and repository name"
           src={githubChart}
           websiteLink="https://mathesh-github-details.netlify.app/"
           githubLink="https://github.com/matheshyogeswaran/git_chart_commits"
+          onClick={() => handleProjectClick({
+            title: "Github Details Get Web App",
+            description: "This application generates commit details and a chart comparing commits and contributors when provided with a username and repository name",
+            websiteLink: "https://mathesh-github-details.netlify.app/",
+            githubLink: "https://github.com/matheshyogeswaran/git_chart_commits",
+            technologies: ["React"],
+            image: githubChart
+          })}
         />
-         <ProjectsCard
+        <ProjectsCard
           title="Open Street Map(OSM) With ReactJS Web App"
           des="This application is designed to retrieve your current location and display the results based on the place you want to search for."
           src={OSM}
           websiteLink="https://mathesh-osm-react-map.netlify.app/"
           githubLink="https://github.com/matheshyogeswaran/openmap_react"
+          onClick={() => handleProjectClick({
+            title: "Open Street Map(OSM) With ReactJS Web App",
+            description: "This application is designed to retrieve your current location and display the results based on the place you want to search for.",
+            websiteLink: "https://mathesh-osm-react-map.netlify.app/",
+            githubLink: "https://github.com/matheshyogeswaran/openmap_react",
+            technologies: ["React", "OpenStreetMap"],
+            image: OSM
+          })}
         />
         {/* <ProjectsCard
           title="SOCIAL MEDIA CLONE"
@@ -76,6 +135,12 @@ const Projects = () => {
           src={projectTwo}
         /> */}
       </div>
+      {showModal && selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={closeModal}
+        />
+      )}
     </section>
   );
 }
