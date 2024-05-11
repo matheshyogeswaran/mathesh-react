@@ -15,6 +15,7 @@ import reactVS from "./images/projects/reactVS.png"
 import OSM from "./images/projects/OSM.png"
 import githubChart from "./images/projects/githubChart.png"
 import json from "./images/projects/JSON.png"
+import weather from "./images/projects/weather.png"
 export {
   logo,
   bannerImg,
@@ -32,7 +33,8 @@ export {
   reactVS,
   OSM,
   githubChart,
-  json
+  json,
+  weather,
 
 
 };

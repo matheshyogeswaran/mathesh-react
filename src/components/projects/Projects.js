@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import Title from '../layouts/Title'
-import { HardwareProject, eprs, delivery, reactVS, OSM, githubChart, json } from "../../assets/index";
+import { HardwareProject, eprs, delivery, reactVS, OSM, githubChart, json, weather } from "../../assets/index";
 import ProjectModal from './ProjectModal'; // Assuming you have a ProjectModal component
 import ProjectsCard from './ProjectsCard';
 
@@ -30,6 +30,20 @@ const Projects = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+      <ProjectsCard
+          title="weather app"
+          des="React Native weather app is designed to provide users with a seamless and intuitive experience for staying informed about weather conditions. Leveraging the power of React Native "
+          src={weather}
+          githubLink="https://github.com/matheshyogeswaran/weatherApp"
+          websiteLink="https://www.linkedin.com/posts/mathesh-yogeswaran_reactnative-nativewind-weatherapp-activity-7187437284911132672-6eoO?utm_source=share&utm_medium=member_desktop"
+          onClick={() => handleProjectClick({
+            title: "weather app",
+            description: "React Native weather app is designed to provide users with a seamless and intuitive experience for staying informed about weather conditions. Leveraging the power of React Native",
+            githubLink: "https://github.com/matheshyogeswaran/weatherApp",
+            technologies: ["React Native", "Native wind"],
+            image: weather 
+          })}
+        />
       <ProjectsCard
           title="react-native-animated-icons-json"
           des="No more tedious JSON file management - simply call the animation's name and watch it come to life. Easily save and access your JSON animations via JSON Saver, ensuring convenient management. Join our community to explore a diverse collection of animated icons and effortlessly enhance your React Native projects with a touch of interactivity. "
