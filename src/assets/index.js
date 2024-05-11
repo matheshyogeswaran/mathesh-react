@@ -14,6 +14,7 @@ import favicon from "./images/favicon.ico";
 import reactVS from "./images/projects/reactVS.png"
 import OSM from "./images/projects/OSM.png"
 import githubChart from "./images/projects/githubChart.png"
+import json from "./images/projects/JSON.png"
 export {
   logo,
   bannerImg,
@@ -30,7 +31,8 @@ export {
   favicon,
   reactVS,
   OSM,
-  githubChart
+  githubChart,
+  json
 
 
 };
