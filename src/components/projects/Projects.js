@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import Title from '../layouts/Title'
-import { HardwareProject, eprs, delivery, reactVS, OSM, githubChart, json, weather } from "../../assets/index";
+import { HardwareProject, eprs, delivery, reactVS, OSM, githubChart, json, weather, foodApp } from "../../assets/index";
 import ProjectModal from './ProjectModal'; // Assuming you have a ProjectModal component
 import ProjectsCard from './ProjectsCard';
 
@@ -30,6 +30,20 @@ const Projects = () => {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+      <ProjectsCard
+          title="Food recipe app"
+          des="Food recipe app using React Native, spiced up with some fancy animations and a pinch of YouTube integration! 📱🍲 Dive into the kitchen with me and explore a world of delicious recipes, courtesy of The Meal DB API."
+          src={foodApp}
+          githubLink="https://github.com/matheshyogeswaran/RNFoodRecipeApp"
+          websiteLink="https://www.linkedin.com/posts/mathesh-yogeswaran_reactnative-nativewind-foodapp-activity-7190188057663315968-mzYS?utm_source=share&utm_medium=member_desktop"
+          onClick={() => handleProjectClick({
+            title: "weather app",
+            description: "Food recipe app using React Native, spiced up with some fancy animations and a pinch of YouTube integration! 📱🍲 Dive into the kitchen with me and explore a world of delicious recipes, courtesy of The Meal DB API.",
+            githubLink: "https://github.com/matheshyogeswaran/RNFoodRecipeApp",
+            technologies: ["React Native", "Native wind"],
+            image: foodApp 
+          })}
+        />
       <ProjectsCard
           title="weather app"
           des="React Native weather app is designed to provide users with a seamless and intuitive experience for staying informed about weather conditions. Leveraging the power of React Native "

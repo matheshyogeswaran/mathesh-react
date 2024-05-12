@@ -16,6 +16,7 @@ import OSM from "./images/projects/OSM.png"
 import githubChart from "./images/projects/githubChart.png"
 import json from "./images/projects/JSON.png"
 import weather from "./images/projects/weather.png"
+import foodApp from "./images/projects/foodApp.png"
 export {
   logo,
   bannerImg,
@@ -35,6 +36,7 @@ export {
   githubChart,
   json,
   weather,
+  foodApp
 
 
 };
