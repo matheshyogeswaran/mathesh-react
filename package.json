@@ -2,6 +2,7 @@
   "name": "portfolioyoutube",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://matheshyogeswaran.github.io/mathesh-react",
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
     "@testing-library/jest-dom": "^5.16.5",
