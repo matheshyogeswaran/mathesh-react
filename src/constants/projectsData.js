@@ -13,8 +13,8 @@ export const projectsData = [
       image: require("../assets/images/projects/foodApp.png"),
       githubLink: "https://github.com/matheshyogeswaran/RNFoodRecipeApp",
       websiteLink:
-        "https://www.linkedin.com/posts/mathesh-yogeswaran_reactnative-nativewind-foodapp",
-      downloadLink: "https://drive.google.com/drive/folder", // Example link
+        "",
+      downloadLink: "https://drive.google.com/drive/u/1/folders/1_RHY3Sb6OOrBlXqcoLo8DzDaXL35USOd", // Example link
       challenges:
         "Enhanced user experience by incorporating NativeWind UI components for a polished interface.",
     },
@@ -32,7 +32,8 @@ export const projectsData = [
       image: require("../assets/images/projects/weather.png"),
       githubLink: "https://github.com/matheshyogeswaran/weatherApp",
       websiteLink:
-        "https://www.linkedin.com/posts/mathesh-yogeswaran_reactnative-nativewind-weatherapp",
+        "",
+      downloadLink: "https://drive.google.com/drive/u/1/folders/1XdUZkL_CR8hTbbvYANIoDjwRwAIwyfaK",
       challenges:
         "Implemented API calls efficiently and optimized performance using React hooks.",
     },
@@ -51,7 +52,7 @@ export const projectsData = [
       githubLink:
         "https://github.com/matheshyogeswaran/react-native-animated-icons-json",
       websiteLink:
-        "https://www.linkedin.com/posts/mathesh-yogeswaran_reactnative-animatedicons-jsonsaver",
+        "https://json-saver.onrender.com/",
       challenges:
         "Simplified animation loading and storage with an NPM package for React Native.",
     },
@@ -65,7 +66,7 @@ export const projectsData = [
         "Quick and hygienic process",
         "User authentication with RFID tags",
       ],
-      technologies: ["RFID", "Automation"],
+      technologies: ["RFID"],
       image: require("../assets/images/projects/HardwareProject.png"),
       githubLink:
         "https://github.com/matheshyogeswaran/Hardware-project-L1.git",
