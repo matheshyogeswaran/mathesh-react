@@ -20,47 +20,98 @@ const Experience = () => {
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
       style={{ minHeight: cardHeight }} // Set the minimum height dynamically
     >
+      {/* First Job - Software Engineering Trainee */}
       <div className="flex-1">
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]"></p>
-          {/* <h2 className="text-3xl md:text-4xl font-bold"></h2> */}
+          <p className="text-sm text-designColor tracking-[4px]">
+            Jul 2024 - Present
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold">Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             id="resumeCard"
-            title="CodeRush 2023 by INTECS"
-            subTitle="CodeRush 2023 Participant: Contributed to Questions, Web Dev, & Design Teams"
-            result="INTECS"
-            des="During CodeRush 2023, I contributed to the Questions and Moderating Team, Web Development Team - Website, and Design Team. My roles included managing inquiries, enhancing website functionality, and creating captivating visual assets, respectively."
-          />
-          <ResumeCard
-            id="resumeCard"
-            title="1st Year Batch Representative"
-            subTitle="Faculty of IT -University of Moratuwa"
-            result="UOM"
-            des="I am the elected representative for the first-year student batch at the University of Moratuwa."
+            title="Software Engineering Trainee"
+            subTitle="Infinity Innovators (Jul 2024 - Present)"
+            result="Colombo 03, Colombo"
+            des={
+              <>
+                <ul className="list-disc pl-5 text-gray-400">
+                  <li>
+                    Developed and integrated{" "}
+                    <strong>Single Sign-On (SSO)</strong> functionality for
+                    Google, Facebook, Amazon, and Apple, enhancing user
+                    authentication in both <strong>iOS</strong> and{" "}
+                    <strong>Android</strong> versions of the mobile app.
+                  </li>
+                  <li>
+                    Integrated <strong>Google AdMob</strong> for monetization
+                    within the app, optimizing ad placements for better revenue
+                    generation across platforms.
+                  </li>
+                  <li>
+                    Worked on the <strong>Android Play Console</strong> and{" "}
+                    <strong>App Store Connect</strong> to prepare the app for
+                    publication, ensuring compliance with platform guidelines.
+                  </li>
+                  <li>
+                    Successfully published the app on the{" "}
+                    <strong>Google Play Store</strong> and the{" "}
+                    <strong>Apple App Store</strong>, making it available for
+                    public download on both platforms.
+                  </li>
+                </ul>
+              </>
+            }
           />
         </div>
       </div>
+
+      {/* Second Job - Software Engineer Intern */}
       <div className="flex-1">
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]"></p>
-          {/* <h2 className="text-3xl md:text-4xl font-bold"></h2> */}
+          <p className="text-sm text-designColor tracking-[4px]">
+            Jan 2024 - Jun 2024
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold">Internship</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             id="resumeCard"
-            title="Hackmoral 5 by INTECS"
-            subTitle="Organized by the Organizing Committee and built by the Web Development Team"
-            result="INTECS"
-            des="Hackmoral 5 is a mini hackathon organized by INTECS, promoting problem-solving skills among IT students."
-          />
-           <ResumeCard
-            id="resumeCard"
-            title="Writer at LinkIT"
-            subTitle="LinkIT - INTECS - (2023 - Present)"
-            result="INTECS - UOM"
-            des="As an active member of the INTECS club at university, I contribute regularly by writing articles on various topics. It's a popular destination with a growing number of highly qualified homegrown graduates, and I take pride in sharing insights and knowledge through my contributions."
+            title="Software Engineer Intern"
+            subTitle="Infinity Innovators (Jan 2024 - Jun 2024)"
+            result="Colombo 03, Colombo"
+            des={
+              <>
+                <ul className="list-disc pl-5 text-gray-400">
+                  <li>
+                    Initiated the mobile app development with{" "}
+                    <strong>React Native</strong>, achieving{" "}
+                    <strong>60%</strong> completion by the end of the
+                    internship.
+                  </li>
+                  <li>
+                    Implemented <strong>AWS Cognito</strong> for secure user
+                    authentication, utilizing <strong>Cognito Authorizers</strong>{" "}
+                    for API security.
+                  </li>
+                  <li>
+                    Engineered image upload functionality using{" "}
+                    <strong>AWS S3</strong>, integrated with{" "}
+                    <strong>DynamoDB</strong> and <strong>Lambda</strong> for
+                    efficient data management.
+                  </li>
+                  <li>
+                    Developed RESTful APIs in <strong>Node.js</strong> using
+                    serverless architecture for React Native integration.
+                  </li>
+                  <li>
+                    Integrated <strong>Google Maps</strong> for real-time
+                    location tracking on iOS and Android platforms.
+                  </li>
+                </ul>
+              </>
+            }
           />
         </div>
       </div>
